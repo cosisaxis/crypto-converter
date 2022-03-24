@@ -56,7 +56,7 @@ const Converter = () => {
         <table>
           <tbody>
             <tr>
-              <td>Currency 1:</td>
+              <td> 1:</td>
               <td>
                 <input
                   type="number"
@@ -73,13 +73,13 @@ const Converter = () => {
                   onChange={(e) => setMainCurrency(e.target.value)}
                 >
                   {currencySelection.map((currency) => (
-                    <option>{currency}</option>
+                    <option id="options">{currency}</option>
                   ))}
                 </select>
               </td>
             </tr>
             <tr>
-              <td>Currency 2:</td>
+              <td> 2:</td>
               <td>
                 <input
                   type="number"
@@ -96,7 +96,7 @@ const Converter = () => {
                   onChange={(e) => setSecondaryCurrency(e.target.value)}
                 >
                   {currencySelection.map((currency) => (
-                    <option>{currency}</option>
+                    <option id="options">{currency}</option>
                   ))}
                 </select>
               </td>
